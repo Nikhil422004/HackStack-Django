@@ -1,0 +1,21 @@
+{% extends "blog/base.html" %} {% block content %}
+<article class="media content-section">
+  <div class="media-body">
+    <div class="article-metadata">
+      <small class="text-muted">{{ post.author }}</small>
+    </div>
+    <h2><a class="article-title" href="#">{{ post.title }}</a></h2>
+    <p class="article-content">
+      <strong>Directed By: </strong> {{ post.director }}
+    </p>
+    <p class="article-content">
+      <strong>Release Date: </strong> {{ post.releaseDate }}
+    </p>
+    <p class="article-content"><strong>Genre: </strong> {{ post.genre }}</p>
+    <p class="article-content">
+      <strong>Description: </strong> <br />
+      {{ post.description }}
+    </p>
+  </div>
+</article>
+{% endblock content %}
